@@ -3,8 +3,7 @@
 ```
 npm run dev
 ```
-Will be available on localhost:3000
-
+Will be available on http://localhost:3000/
 ## Setup
 ```
 npm install
