@@ -37,6 +37,7 @@ class CrowdFundCards extends React.Component {
     this.renderCard = this.renderCard.bind(this);
   }
 
+
   renderCard() {
     const { classes } = this.props;
     return (
