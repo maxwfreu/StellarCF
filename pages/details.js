@@ -14,6 +14,9 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Layout from '../components/Layout';
+import LinearProgress from '@material-ui/core/LinearProgress';
+import Avatar from '@material-ui/core/Avatar';
+import Steps from '../components/Steps';
 
 const styles = theme => ({
   backgroundImg: {
@@ -21,11 +24,18 @@ const styles = theme => ({
     width: '100%',
   },
   card: {
-    width: '90%',
+    width: '95%',
     margin: theme.spacing.unit,
     margin: '0 auto',
     height: '2000px',
   },
+  people: {
+    display: 'flex',
+    flexDirection: 'row',
+  },
+  typography: {
+    marginTop: theme.spacing.unit,
+  }
 });
 
 class Details extends React.Component {
@@ -44,22 +54,34 @@ class Details extends React.Component {
           </div>
           <Card className={classes.card}>
             <CardContent>
-              <Typography gutterBottom variant="headline" component="h2">
-                Lizard
+              <Typography gutterBottom variant="headline" component="h2" className={classes.typography}>
+                60% Funded
               </Typography>
-              <Typography component="p">
+              <LinearProgress variant="buffer" value={60} valueBuffer={40} />
+              <Typography className={classes.typography} gutterBottom component="p" variant="subheading">
+                Backers:
+              </Typography>
+              <div className={classes.people}>
+                <Avatar alt="Remy Sharp" src="/static/images/people/image-1.png" className={classes.avatar} />
+                <Avatar alt="Remy Sharp" src="/static/images/people/image-2.png" className={classes.avatar} />
+                <Avatar alt="Remy Sharp" src="/static/images/people/image-3.png" className={classes.avatar} />
+                <Avatar alt="Remy Sharp" src="/static/images/people/image-4.png" className={classes.avatar} />
+              </div>
+              <Typography component="p" className={classes.typography}>
+                Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+                across all continents except Antarctica
+                Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+                across all continents except Antarctica
+                Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+                across all continents except Antarctica
                 Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
                 across all continents except Antarctica
               </Typography>
+              <Typography className={classes.typography} gutterBottom component="p" variant="headline">
+                How we plan to get there
+              </Typography>
+              <Steps />
             </CardContent>
-            <CardActions>
-              <Button size="small" color="primary">
-                Share
-              </Button>
-              <Button size="small" variant="contained" color="secondary" href="/details">
-                Learn More
-              </Button>
-            </CardActions>
           </Card>
           <Background className={classes.backgroundImg}>
             <img src="/static/images/testimg.jpg" alt="fill murray" />
