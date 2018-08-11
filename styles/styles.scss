@@ -1,0 +1,54 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Roboto;
+  background-color: #E8EAF6 !important;
+}
+
+#__next {
+  height: 100%;
+}
+
+.login-wrapper {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-card {
+  height: 100%;
+  max-width: 500px;
+  width: 100%;
+  max-height: 500px;
+}
+
+.details-main {
+  min-height: 500px;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+
+  h1, h3 {
+    margin: 0;
+    width: 100%;
+    color: white;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
