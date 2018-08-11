@@ -1,2 +1,8 @@
+## Next
 /.next
+
+## NPM
 /node_modules
+
+## Mac
+.DS_STORE
