@@ -27,7 +27,7 @@ const styles = theme => ({
     width: '95%',
     margin: theme.spacing.unit,
     margin: '0 auto',
-    height: '2000px',
+    height: '1000px',
   },
   people: {
     display: 'flex',
